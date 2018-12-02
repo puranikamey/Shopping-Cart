@@ -1,7 +1,7 @@
 
 ####E-commerce Web-site 
 
-The E-commerce  website hosted on the link: http://ec2-35-174-105-102.compute-1.amazonaws.com/ is a application where consumers can buy multiple products from different categories. Additionally providing administrators functionality to keep a track of inventory available and later export it to excel.
+The E-commerce  website  is a application where consumers can buy multiple products from different categories. Additionally providing administrators functionality to keep a track of inventory available and later export it to excel.
 
 
 
