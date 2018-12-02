@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h1>User Profile</h1>
+        <hr>
+        <h2>My Orders</h2>
+        {{# each orders }}
+        <div class="progress">
+          <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+          aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+          Order  Received
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+          aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:5%">
+            Shipped.
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+          aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:5%">
+            On its Way.
+          </div>
+        </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <ul class="list-group">
+                        {{# each this.items }}
+                            <li class="list-group-item">
+                                <span class="badge">{{ this.price }}</span>
+                                {{ this.item.name }} | {{ this.qty }} Units
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <strong>Total Price: ${{ this.cart.totalPrice }}</strong>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
